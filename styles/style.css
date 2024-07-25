@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #021526;
+    --cor-secundaria: #E2E2B6;
+    --cor-terciaria: #6EACDA;
+    --cor-hover: #03346E;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.titulo-destaque {
+    color: var(--cor-secundaria);
+}
+
+.container {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.container__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container__content__title {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.container__content__text {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria)
+}
+
+.container__content__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.container__content__subtitle {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container__content__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 8px;
+}
+
+.container__content__links__navegacao:hover {
+    background-color: var(--cor-hover)
+}
+
+.container__content__name:hover{
+    color: var(--cor-hover);
+}
+
+.container__image {
+    width: 50%;
+}
+
+.rodape {
+    color: #000000;
+    background-color: var(--cor-secundaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .container {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .container__content {
+        width: 100%;
+    }
+}
